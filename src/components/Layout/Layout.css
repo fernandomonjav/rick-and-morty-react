@@ -1,0 +1,11 @@
+.main {
+  margin-top: var(--header-height);
+  margin-bottom: var(--nav-bottom-height);
+}
+
+@media screen and (min-width: 960px) {
+  .main {
+    margin-left: var(--sidebar-width);
+    margin-bottom: 0;
+  }
+}

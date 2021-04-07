@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--background-surface);
+}
+
+.header__container {
+  padding: 0 1rem;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo > span {
+  margin-left: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: var(--font-bold);
+}
