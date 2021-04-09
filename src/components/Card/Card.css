@@ -25,20 +25,18 @@
 }
 
 .card__title {
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
 }
 
 .card__subtitle {
   margin-top: 0.25rem;
   font-size: 0.875rem;
-  font-weight: var(--font-medium);
   opacity: 0.6;
 }
 
 .card__description {
   margin-top: 0.5rem;
   font-size: 0.75rem;
-  font-weight: var(--font-medium);
   text-transform: uppercase;
   opacity: 0.4;
 }

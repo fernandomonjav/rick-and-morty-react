@@ -1,11 +1,11 @@
-import Header from '../Header'
 import Menu from '../Menu'
+import Navbar from '../Navbar'
 import './Layout.css'
 
 const Layout: React.FC = ({ children }) => {
   return (
     <div className="layout">
-      <Header />
+      <Navbar />
       <Menu />
       <div className="main">{children}</div>
     </div>
