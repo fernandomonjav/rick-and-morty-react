@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Card from '../../components/Card'
 import Grid from '../../components/Grid'
 import View from '../../components/View'
@@ -16,12 +17,13 @@ const CharactersPage = () => {
     <View>
       <Grid>
         {characters.map((character) => (
-          <Card
-            key={character.id}
-            title={character.name}
-            subtitle={character.species}
-            image={character.image}
-          />
+          <Link key={character.id} to={`/characters/${character.id}`}>
+            <Card
+              title={character.name}
+              subtitle={character.species}
+              image={character.image}
+            />
+          </Link>
         ))}
       </Grid>
     </View>

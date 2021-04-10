@@ -1,9 +1,9 @@
-interface Origin {
+interface CharacterOrigin {
   name: string
   url: string
 }
 
-interface Location {
+interface CharacterLocation {
   name: string
   url: string
 }
@@ -13,10 +13,10 @@ interface Character {
   name: string
   status: string
   species: string
-  type: string
+  type?: string
   gender: string
-  origin: Origin
-  location: Location
+  origin: CharacterOrigin
+  location: CharacterLocation
   image: string
   episode: string[]
   url: string
